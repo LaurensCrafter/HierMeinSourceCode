@@ -1,0 +1,6 @@
+name: SpielmodusTV
+version: '${project.version}'
+main: de.aussichtigertv.spielmodus.Spielmodus
+api-version: 1.19
+author: AussichtigerTV
+
