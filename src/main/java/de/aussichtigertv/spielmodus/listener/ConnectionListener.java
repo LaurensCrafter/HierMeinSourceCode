@@ -17,11 +17,10 @@ public class ConnectionListener implements Listener {
         Player player = event.getPlayer();
         player.setHealth(20);
         player.setFoodLevel(20);
-
         Spielmodus.getInstance().getMethod().setHeaderAndFooter(player); //sendet TAB
 
         Bukkit.getOnlinePlayers().forEach(players -> {
-            players.sendMessage(Spielmodus.getInstance().getPrefix() + player.getDisplayName()+ "§7 hat das Spiel §abetreten§7.");
+            players.sendMessage(Spielmodus.getInstance().getPrefix() +"§e" + player.getDisplayName()+ " §7hat das Spiel §abetreten§7.");
         });
     }
 
@@ -31,7 +30,7 @@ public class ConnectionListener implements Listener {
 
         Player player = event.getPlayer();
         Bukkit.getOnlinePlayers().forEach(players -> {
-            players.sendMessage(Spielmodus.getInstance().getPrefix() + player.getDisplayName()+  "§7 hat das Spiel §cverlassen§7.");
+            players.sendMessage(Spielmodus.getInstance().getPrefix() + player.getDisplayName() +  " §7hat das Spiel §cverlassen§7.");
         });
     }
 }

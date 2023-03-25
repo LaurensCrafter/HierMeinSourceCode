@@ -4,3 +4,13 @@ main: de.aussichtigertv.spielmodus.Spielmodus
 api-version: 1.19
 author: AussichtigerTV
 
+commands:
+  start:
+    aliases:
+      - force
+      - focestart
+      - startgame
+      - skipcountdown
+  setup:
+    aliases:
+      - konfigorieren
